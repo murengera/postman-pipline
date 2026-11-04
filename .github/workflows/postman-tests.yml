@@ -1,0 +1,40 @@
+name: Postman API Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Newman
+        run: npm install -g newman newman-reporter-htmlextra
+
+      - name: Run Postman Collection
+        run: |
+          newman run ecommerce-API-project.json \
+            --environment my-environment.json \
+            --env-var "base_url=${{ secrets.BASE_URL }}" \
+            --env-var "access_token=" \
+            --reporters cli,htmlextra \
+            --reporter-htmlextra-export newman-report.html \
+            --bail
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: newman-test-report
+          path: newman-report.html

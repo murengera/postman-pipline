@@ -1,0 +1,17 @@
+{
+  "id": "7470e4f8-2a0e-46e2-8e83-8e4911becdf8",
+  "name": "my enviroment 1",
+  "values": [
+    {"key": "base_url", "value": "", "description": "TODO: Fill in your API base URL, e.g. https://api.example.com", "type": "default", "enabled": true},
+    {"key": "access_token", "value": "", "type": "secret", "enabled": true},
+    {"key": "refresh_token", "value": "", "type": "secret", "enabled": true},
+    {"key": "user id", "value": "", "type": "default", "enabled": true},
+    {"key": "products", "value": "", "type": "default", "enabled": true},
+    {"key": "product_id", "value": "", "type": "default", "enabled": true},
+    {"key": "cart_id", "value": "", "type": "default", "enabled": true},
+    {"key": "productID", "value": "", "type": "default", "enabled": true}
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2026-11-04T13:38:00.000Z",
+  "_postman_exported_using": "Postman Agent"
+}

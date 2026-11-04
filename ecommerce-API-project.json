@@ -1,0 +1,90 @@
+{
+  "status": "SUCCESS",
+  "message": "Found collection ecommerce API project",
+  "collection": {
+    "id": "8046387-29a786dd-ecc3-472c-8eb6-68eb6cf7479b",
+    "name": "ecommerce API project",
+    "description": null,
+    "tests": "",
+    "auth": null,
+    "requests": [
+      {
+        "id": "8046387-07e778c6-bbff-4e44-ae4d-7c8b7582cb9f",
+        "name": "get single product",
+        "url": "{{base_url}}/products/{{product_id}}",
+        "method": "GET",
+        "description": null,
+        "isReusableReference": false,
+        "reusableReferences": [],
+        "overrides": []
+      },
+      {
+        "id": "8046387-333f61e5-c20b-4881-86c3-84b9f3fc945f",
+        "name": "login",
+        "url": "{{base_url}}/auth/login",
+        "method": "POST",
+        "description": null,
+        "isReusableReference": false,
+        "reusableReferences": [],
+        "overrides": []
+      },
+      {
+        "id": "8046387-654bc9cf-1a6a-4090-8329-375d05142ffc",
+        "name": "get products",
+        "url": "{{base_url}}/products",
+        "method": "GET",
+        "description": null,
+        "isReusableReference": false,
+        "reusableReferences": [],
+        "overrides": []
+      },
+      {
+        "id": "8046387-ad0fdf1a-5a6c-4da7-9b1b-987a1ec8ff7f",
+        "name": "get cart details",
+        "url": "{{base_url}}/carts/{{cart_id}}",
+        "method": "GET",
+        "description": null,
+        "isReusableReference": false,
+        "reusableReferences": [],
+        "overrides": []
+      },
+      {
+        "id": "8046387-fc38879b-3ab9-4e5d-8aa8-19d7652822e2",
+        "name": "add to cart",
+        "url": "{{base_url}}/carts/add",
+        "method": "POST",
+        "description": null,
+        "isReusableReference": false,
+        "reusableReferences": [],
+        "overrides": []
+      },
+      {
+        "id": "8046387-fcafc1f3-358c-4c23-aab4-1625e023f11d",
+        "name": "get user profile",
+        "url": "{{base_url}}/auth/me",
+        "method": "GET",
+        "description": null,
+        "isReusableReference": false,
+        "reusableReferences": [],
+        "overrides": []
+      }
+    ],
+    "folders": [],
+    "order": [
+      "8046387-333f61e5-c20b-4881-86c3-84b9f3fc945f",
+      "8046387-fcafc1f3-358c-4c23-aab4-1625e023f11d",
+      "8046387-654bc9cf-1a6a-4090-8329-375d05142ffc",
+      "8046387-07e778c6-bbff-4e44-ae4d-7c8b7582cb9f",
+      "8046387-fc38879b-3ab9-4e5d-8aa8-19d7652822e2",
+      "8046387-ad0fdf1a-5a6c-4da7-9b1b-987a1ec8ff7f"
+    ],
+    "foldersOrder": [],
+    "preRequestScript": "",
+    "jiraContext": {
+      "isJiraAuthorized": false,
+      "issuesCount": 0,
+      "issuesList": [],
+      "jqlEntityLink": "(text ~ \"https://desktop.postman.com/workspace/My-Workspace\\\\~b83ae630-b3b3-4fdb-880b-1fdc078a35f0/collection/8046387-29a786dd-ecc3-472c-8eb6-68eb6cf7479b\" OR description ~ \"https://desktop.postman.com/workspace/My-Workspace\\\\~b83ae630-b3b3-4fdb-880b-1fdc078a35f0/collection/8046387-29a786dd-ecc3-472c-8eb6-68eb6cf7479b\")"
+    }
+  }
+}
